@@ -4,16 +4,13 @@ import ReactDOM from "react-dom/client";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 function Greeting() {
-  return (
-    <div>
-      <h1>hola mark</h1>
-      <p>biltrumita</p>
-    </div>
-  );
+  const married=false;
+return <h1>{married.toString()}</h1>
+    
 }
+
 root.render(
-  <div>
+  <>
     <Greeting />
-    <Greeting />
-  </div>
+  </>
 );
