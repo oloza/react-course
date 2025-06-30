@@ -2,7 +2,7 @@ import {PropTypes} from 'prop-types'
 
 export function Button({text,name}) {
 console.log(text,name)
-  return <button>
+return <button onClick={function(){console.log('clicked me')}}>
     {text} - {name}
   </button>;
 }
@@ -13,4 +13,4 @@ console.log(text,name)
 
  Button.defaultProps={
     name:'Some user'
- }
+ }  
